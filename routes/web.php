@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+Route::get('/',  'TeacherController@index');
+Route::get('/teachers',  'TeacherController@index');
+Route::get('/teachers/create',  'TeacherController@create');
+Route::post('/teachers',  'TeacherController@store');
+Route::any('/search',  'TeacherController@search');
+
+//search
+
+
