@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Teacher;
 use App\Subject;
+use DB;
 
 class TeacherController extends Controller
 {
@@ -70,15 +71,18 @@ class TeacherController extends Controller
     {
         //
         $q=$request->q;
+        
             if($q != ""){
-            $teacher = Teacher::where ( 'firstname', 'LIKE', '%' . $q . '%' )->orWhere ( 'lastname', 'LIKE', '%' . $q . '%' )->count();
-            }
-            if ($teacher > 0){
-                $teachers = Teacher::all();
-                $subjects = Subject::all();
-                return view('teachers.index', compact('teachers', 'subjects'))->withDetails ( $teacher )->withQuery ( $q );
-            }
-            return redirect('/teachers')->withMessage ( 'No Details found. Try to search again !' );
+                
+            $teachers = Teacher::where( 'firstname', 'LIKE', '%' . $q . '%' )->get();
+           
+           
+            } 
+            return view('teachers.index', compact('teachers'));
+          
+            
+          
+        
         
     }
 

@@ -30,7 +30,7 @@
 			{{ csrf_field() }}
 			<div class="input-group">
         
-				<input type="text" class="form-control" name="q"
+				<input type="search" class="form-control" name="q"
 					placeholder="Search teacher"> <span class="input-group-btn">
 					<button type="submit" class="btn btn-info"> search
 						<span class="btn-info"></span>
