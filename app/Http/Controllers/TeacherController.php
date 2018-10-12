@@ -73,7 +73,7 @@ class TeacherController extends Controller
         $q=$request->q;
         
             if($q != ""){
-                
+                //use orwhere ->orWhere('lastname ','LIKE','%'.$q.'%')
             $teachers = Teacher::where( 'firstname', 'LIKE', '%' . $q . '%' )->get();
            
            
