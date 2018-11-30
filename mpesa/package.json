@@ -1,0 +1,35 @@
+{
+  "id": "com.mawingu.mpesa",
+  "schemaVersion": 1,
+  "version": "2",
+  "minorVersion": 2,
+  "providerName": "NanyukiAF",
+  "displayName": "Mpesa",
+  "description": "Customer Mpesa Top Up",
+  "icon": "livestock.png",
+  "appModel": "AppModel.json",
+  "dials": {
+    "isLocalised": false,
+    "isPinned": false
+  },
+  "actionScope": "Group",
+  "views": {
+    "CreationView": {
+      "sourceLocation": "Response.html",
+      "showNativeToolbar": false
+    },
+    "ChatCanvasCardView": {
+      "showReceipts": false,
+      "showLikes": false,
+      "showComments": false,
+      "labelResponseSending": "Submitting your details",
+      "labelResponded": "Mpesa Top Up provided",
+      "labelResponseFailed": " Mpesa Top Up submission failed",
+      "isResponseEditable": false
+    },
+    "ResponseResultsView": {
+      "sourceLocation": "ResponseSummary.html",
+      "showNativeToolbar": false
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Customer Mpesa Top Up",
+  "visibility": "All",
+  "expiry": 0,
+  "isAnonymous": false,
+  "isResponseAppended": true,
+  "isLocationRequested": false,
+  "questions": [
+    {
+      "title": "Enter Mobile Number",
+      "type": "Text",
+      "isOptional": true
+    },
+    {
+      "title": "Mobile Number",
+      "type": "Text",
+      "isOptional": true
+    },
+    {
+      "title": "Enter Mpesa Transaction Number",
+      "type": "text",
+      "isOptional": true
+    },
+
+    {
+      "title": "Select Package Amount",
+      "type": "SingleSelect",
+      "options": [
+        {
+          "title": "4"
+        },
+        {
+          "title": "10"
+        },
+        {
+          "title": "20"
+        },
+        {
+          "title": "50"
+        },
+        {
+          "title": "100"
+        },
+        {
+          "title": "300"
+        },
+        {
+          "title": "1000"
+        }
+      ]
+    },
+    {
+      "title": "Name",
+      "type": "Text"
+    },
+    {
+      "title": "Phone",
+      "type": "Text"
+    },
+    {
+      "title": "Response Time",
+      "type": "DateTime"
+    }
+  ]
+}
